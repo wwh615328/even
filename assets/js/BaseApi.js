@@ -1,6 +1,6 @@
 $.ajaxPrefilter(function(option){
     option.url='http://ajax.frontend.itheima.net'+option.url
-    console.log(option);
+    // console.log(option);
     if(option.url.indexOf('/my')){
        option.headers= {
             Authorization:localStorage.getItem('token')||''
