@@ -23,7 +23,7 @@ function getUserInfo(){
 }
 function  renderAvatar(user){
     const username=user.nickname||user.username
-    $('.welcome').html(username)
+    $('#welcome').html(username)
     if(user.user_pic){
         $('.layui-nav-img').attr('src',user.user_pic).show()
         $('.text-avatar').hide()
